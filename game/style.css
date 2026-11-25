@@ -1,0 +1,27 @@
+/* Sizzle & Serve — page shell. The game itself is one canvas; this only
+   centres it and keeps it readable on a desktop browser. */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #2b1d12; }
+#wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+}
+#game {
+  width: min(1280px, 96vw);
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  background: #f7ead7;
+}
+#help {
+  margin: 0;
+  color: #e8d9b8;
+  font: 400 14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+  text-align: center;
+}
